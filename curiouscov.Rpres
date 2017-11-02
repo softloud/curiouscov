@@ -1,0 +1,87 @@
+The Curious Case of the Disappearing Coverage: a detective story in visualisation.
+========================================================
+author: Charles T. Gray
+date: `r lubridate::today()`
+autosize: true
+incremental: true
+
+```{r Packages, include = F}
+library(tidyverse)
+library(dontpanic)
+
+```
+
+The Curious Case of the Disappearing Coverage
+========================================================
+**A detective story in visualisation.**
+
+Introduction.
+
+Introduction: the ggplot generation
+========================================================
+
+- What can I show you that you haven't seen already?
+- Who am I? (Happy birthday to me.)
+- Learning statistics & `ggplot` at the same time.
+- Dataframes & `tidyverse`
+- Reflections at $\frac 1 2 \cdot$ PhD.
+
+Statistics through a tidyverse lens
+========================================================
+
+```{r lens, echo=FALSE}
+# Start with just doing what you want on each panel separately.
+
+# Start by talking about the data structure.
+# Data structure is where one necessarily starts.
+# Data structure has been haphazard in the past but has now become uniform.
+
+# Rows as observations, columns as variables.
+# a.k.a. long form data.
+iris %>% head %>% knitr::kable()
+
+
+# Faceting means we 
+
+
+
+
+```
+
+
+
+Meta-analysis
+========================================================
+
+
+
+
+
+
+
+First Slide
+========================================================
+
+For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Introduction
+========================================================
+
