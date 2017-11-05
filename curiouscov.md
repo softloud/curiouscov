@@ -1,7 +1,7 @@
-The Curious Case of the Disappearing Coverage: a detective story in visualisation.
+The Curious Case of the Disappearing Coverage: a detective story in visualisation
 ========================================================
-author: Charles T. Gray
-date: 2017-11-03
+author: Charles T. Gray, La Trobe University
+date: Sunday 5 November 2017
 autosize: true
 incremental: true
 
@@ -11,16 +11,31 @@ The Curious Case of the Disappearing Coverage
 ========================================================
 **A detective story in visualisation.**
 
-Introduction.
+Introduction
+Statistics through a tidyverse lens
 
 Introduction: the ggplot generation
 ========================================================
 
-- What can I show you that you haven't seen already?
+## What can I show you that you haven't seen already?
 - Who am I? (Happy birthday to me.)
-- Learning statistics & `ggplot` at the same time.
+
+## Learning statistics & `ggplot` at the same time.
 - Dataframes & `tidyverse`
 - Reflections at $\frac 1 2 \cdot$ PhD.
+
+## Here to learn from you.
+- Questions, discussion, and comments are encouraged.
+
+<!-- Consider not talking about meta-analysis-->
+Coverage probability simulations
+========================================================
+
+## What is a coverage probability simulation?
+> Aim: Perform an experiment to see if the estimator  **parameter** $\theta$.
+
+========================================================
+
 
 Statistics through a tidyverse lens
 ========================================================
