@@ -1,7 +1,7 @@
 The Curious Case of the Disappearing Coverage: a detective story in visualisation
 ========================================================
 author: Charles T. Gray, La Trobe University
-date: Sunday 5 November 2017
+date: Thursday 9 November 2017
 autosize: true
 incremental: true
 
@@ -11,12 +11,19 @@ The Curious Case of the Disappearing Coverage
 ========================================================
 **A detective story in visualisation.**
 
-Introduction
-Statistics through a tidyverse lens
+- Introduction
+- What makes a **good** visualisation?
+- What are coverage probability simulations?
+- Visualising coverage probability simulations
+- The Curious Case of the Disappearing Coverage
 
 Introduction: the ggplot generation
 ========================================================
 
+- Open with a zesty story of local flavour.
+
+Introduction: the ggplot generation
+========================================================
 ## What can I show you that you haven't seen already?
 - Who am I? (Happy birthday to me.)
 
@@ -24,75 +31,86 @@ Introduction: the ggplot generation
 - Dataframes & `tidyverse`
 - Reflections at $\frac 1 2 \cdot$ PhD.
 
+Introduction: the ggplot generation
+========================================================
 ## Here to learn from you.
+- Coding in isolation; social experiment.
 - Questions, discussion, and comments are encouraged.
 
-<!-- Consider not talking about meta-analysis-->
+
+Thoughts from messing around
+========================================================
+
+- Not theoretical.
+- **Undirected**.
+- Theory, *next*.
+
+Thoughts from messing around
+========================================================
+
+## What makes a **good** visualisation?
+
+- What are we most interested in? *This is $y$*.
+- Can we distill this to an algorithm?
+- What are we most interested in observing an  
+- **Foremost, the measure of a visualisation is how well it answers the question you are asking.**
+
+## base`R` vs `ggplot`
+
+- Perhaps at best **three variables** in base`R`.
+- Flexible facets, shapes, colour, and size add more variables in `ggplot`.
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_1.png)
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_2.png)
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_3.png)
+
+
 Coverage probability simulations
 ========================================================
 
 ## What is a coverage probability simulation?
 > Aim: Perform an experiment to see if the estimator  **parameter** $\theta$.
 
+Visualising coverage probability simulations
 ========================================================
 
+Variables of interest:
 
-Statistics through a tidyverse lens
+- **Coverage probability**
+- Distribution
+- Sample size
+- Estimator
+- Relative absolute bias
+- Interval width
+
+Visualising coverage probability simulations
 ========================================================
+left: 70%
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_norm_sim.png)
+***
+Variables of interest:
 
+- **Coverage probability**
+- Distribution
+- Sample size
+- Estimator
+- Relative absolute bias
+- Interval width
 
-| Sepal.Length| Sepal.Width| Petal.Length| Petal.Width|Species |
-|------------:|-----------:|------------:|-----------:|:-------|
-|          5.1|         3.5|          1.4|         0.2|setosa  |
-|          4.9|         3.0|          1.4|         0.2|setosa  |
-|          4.7|         3.2|          1.3|         0.2|setosa  |
-|          4.6|         3.1|          1.5|         0.2|setosa  |
-|          5.0|         3.6|          1.4|         0.2|setosa  |
-|          5.4|         3.9|          1.7|         0.4|setosa  |
-
-
-
-Meta-analysis
+Visualising coverage probability simulations
 ========================================================
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_norm_sim.png)
 
 
-
-
-
-
-
-First Slide
+The Curious Case of the Disappearing Coverage
 ========================================================
-
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
-========================================================
-
-
-```r
-summary(cars)
-```
-
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
-
-Slide With Plot
-========================================================
-
-![plot of chunk unnamed-chunk-2](curiouscov-figure/unnamed-chunk-2-1.png)
-
-Introduction
-========================================================
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_om_sim.png)
 

@@ -15,12 +15,19 @@ The Curious Case of the Disappearing Coverage
 ========================================================
 **A detective story in visualisation.**
 
-Introduction
-Statistics through a tidyverse lens
+- Introduction
+- What makes a **good** visualisation?
+- What are coverage probability simulations?
+- Visualising coverage probability simulations
+- The Curious Case of the Disappearing Coverage
 
 Introduction: the ggplot generation
 ========================================================
 
+- Open with a zesty story of local flavour.
+
+Introduction: the ggplot generation
+========================================================
 ## What can I show you that you haven't seen already?
 - Who am I? (Happy birthday to me.)
 
@@ -28,75 +35,86 @@ Introduction: the ggplot generation
 - Dataframes & `tidyverse`
 - Reflections at $\frac 1 2 \cdot$ PhD.
 
+Introduction: the ggplot generation
+========================================================
 ## Here to learn from you.
+- Coding in isolation; social experiment.
 - Questions, discussion, and comments are encouraged.
 
-<!-- Consider not talking about meta-analysis-->
+
+Thoughts from messing around
+========================================================
+
+- Not theoretical.
+- **Undirected**.
+- Theory, *next*.
+
+Thoughts from messing around
+========================================================
+
+## What makes a **good** visualisation?
+
+- What are we most interested in? *This is $y$*.
+- Can we distill this to an algorithm?
+- What are we most interested in observing an  
+- **Foremost, the measure of a visualisation is how well it answers the question you are asking.**
+
+## base`R` vs `ggplot`
+
+- Perhaps at best **three variables** in base`R`.
+- Flexible facets, shapes, colour, and size add more variables in `ggplot`.
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_1.png)
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_2.png)
+
+Telling the story of the data
+========================================================
+![](stand-in-vis/pics-ICORS-talk/ratio_3.png)
+
+
 Coverage probability simulations
 ========================================================
 
 ## What is a coverage probability simulation?
 > Aim: Perform an experiment to see if the estimator  **parameter** $\theta$.
 
+Visualising coverage probability simulations
 ========================================================
 
+Variables of interest:
 
-Statistics through a tidyverse lens
+- **Coverage probability**
+- Distribution
+- Sample size
+- Estimator
+- Relative absolute bias
+- Interval width
+
+Visualising coverage probability simulations
 ========================================================
+left: 70%
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_norm_sim.png)
+***
+Variables of interest:
 
-```{r lens, echo=FALSE}
-# Start with just doing what you want on each panel separately.
+- **Coverage probability**
+- Distribution
+- Sample size
+- Estimator
+- Relative absolute bias
+- Interval width
 
-# Start by talking about the data structure.
-# Data structure is where one necessarily starts.
-# Data structure has been haphazard in the past but has now become uniform.
-
-# Rows as observations, columns as variables.
-# a.k.a. long form data.
-iris %>% head %>% knitr::kable()
-
-
-# Faceting means we 
-
-
-
-
-```
-
-
-
-Meta-analysis
+Visualising coverage probability simulations
 ========================================================
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_norm_sim.png)
 
 
-
-
-
-
-
-First Slide
+The Curious Case of the Disappearing Coverage
 ========================================================
-
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
-========================================================
-
-```{r}
-summary(cars)
-```
-
-Slide With Plot
-========================================================
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Introduction
-========================================================
+![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_om_sim.png)
 
