@@ -1,7 +1,7 @@
 The Curious Case of the Disappearing Coverage: a detective story in visualisation
 ========================================================
 author: Charles T. Gray, La Trobe University
-date: Thursday 9 November 2017
+date: Sunday 12 November 2017
 autosize: true
 incremental: true
 
@@ -12,15 +12,16 @@ The Curious Case of the Disappearing Coverage
 **A detective story in visualisation.**
 
 - Introduction
-- What makes a **good** visualisation?
+- An experiment in isolation
 - What are coverage probability simulations?
 - Visualising coverage probability simulations
 - The Curious Case of the Disappearing Coverage
+- If we have time, `purrr` simulations.
 
-Introduction: the ggplot generation
+Hello, world.
 ========================================================
 
-- Open with a zesty story of local flavour.
+- Open with a quirky story of local flavour.
 
 Introduction: the ggplot generation
 ========================================================
@@ -35,14 +36,15 @@ Introduction: the ggplot generation
 ========================================================
 ## Here to learn from you.
 - Coding in isolation; social experiment.
-- Questions, discussion, and comments are encouraged.
+- Questions, discussion, and comments are invited.
+- A **rowdy atmosphere** is encouraged.
 
 
 Thoughts from messing around
 ========================================================
 
 - Not theoretical.
-- **Undirected**.
+- Reflections results of **undirected exploration**.
 - Theory, *next*.
 
 Thoughts from messing around
@@ -50,9 +52,10 @@ Thoughts from messing around
 
 ## What makes a **good** visualisation?
 
-- What are we most interested in? *This is $y$*.
+- What are we most interested in? *This* is **$y$**.
 - Can we distill this to an algorithm?
-- What are we most interested in observing an  
+- How to order variables by importance?
+- Should we?
 - **Foremost, the measure of a visualisation is how well it answers the question you are asking.**
 
 ## base`R` vs `ggplot`
@@ -113,4 +116,21 @@ Visualising coverage probability simulations
 The Curious Case of the Disappearing Coverage
 ========================================================
 ![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_om_sim.png)
+
+The Curious Case of the Disappearing Coverage
+========================================================
+# So what is going on?
+# A dasterdly plot afoot?
+# A bug in my code?
+
+
+Testing area
+========================================================
+
+
+```r
+metamean::cov_dist
+```
+
+![plot of chunk Test plot](curiouscov-figure/Test plot-1.png)
 
