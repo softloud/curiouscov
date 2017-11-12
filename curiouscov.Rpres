@@ -5,17 +5,17 @@ date: `r dontpanic::title_date()`
 autosize: true
 incremental: true
 
-```{r Packages, include = F}
-library(tidyverse) # Do these not load?
-library(dontpanic)
-library(lubridate)
-```
-
 The Curious Case of the Disappearing Coverage
 ========================================================
 **A detective story in visualisation.**
 
-- Introduction
+
+```{r Packages, include = F}
+library(tidyverse) # Do these not load?
+library(ochRe)
+```
+
+- Introduction 
 - An experiment in isolation
 - What are coverage probability simulations?
 - Visualising coverage probability simulations
@@ -25,7 +25,8 @@ The Curious Case of the Disappearing Coverage
 Hello, world.
 ========================================================
 
-- Open with a quirky story of local flavour.
+- Open with a quirky story of local flavour. 
+
 
 Introduction: the ggplot generation
 ========================================================
@@ -127,11 +128,35 @@ The Curious Case of the Disappearing Coverage
 # A dasterdly plot afoot?
 # A bug in my code?
 
+Questions
+========================================================
+
+**Questions for you**
+- Do we teach visualisation **adequately** to future analysts?
+- Do you consider the impact of housing affordability and the lack of enforcable tenants' rights on your **renting** students in low socio-economic circumstances?
+
+**Questions about me**
+- Visualisation, yes. But also: 
+  - Abstract algebra;
+  - Buffy the Vampire Slayer;
+  - 17th-century counterpoint;
+  - The Russion school of piano and three types of staccato;
+  - Life as a survivor of abuse.
+- You can ask me about **anything**. 
+- It's okay, really. Real stories **educate**.
+
+
 
 Testing area
 ========================================================
 
 ```{r Test plot}
-metamean::cov_dist
+metamean::cov_dist 
+
+# +
+#   scale_colour_ochre(palette="dead_reef") +
+#     theme_bw() + 
+#     theme(aspect.ratio=1, legend.position="bottom")
+
 ```
 

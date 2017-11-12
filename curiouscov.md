@@ -1,17 +1,18 @@
 The Curious Case of the Disappearing Coverage: a detective story in visualisation
 ========================================================
 author: Charles T. Gray, La Trobe University
-date: Sunday 12 November 2017
+date: Monday 13 November 2017
 autosize: true
 incremental: true
-
-
 
 The Curious Case of the Disappearing Coverage
 ========================================================
 **A detective story in visualisation.**
 
-- Introduction
+
+
+
+- Introduction 
 - An experiment in isolation
 - What are coverage probability simulations?
 - Visualising coverage probability simulations
@@ -21,7 +22,8 @@ The Curious Case of the Disappearing Coverage
 Hello, world.
 ========================================================
 
-- Open with a quirky story of local flavour.
+- Open with a quirky story of local flavour. 
+
 
 Introduction: the ggplot generation
 ========================================================
@@ -123,14 +125,39 @@ The Curious Case of the Disappearing Coverage
 # A dasterdly plot afoot?
 # A bug in my code?
 
+Questions
+========================================================
+
+**Questions for you**
+- Do we teach visualisation **adequately** to future analysts?
+- Do you consider the impact of housing affordability and the lack of enforcable tenants' rights on your **renting** students in low socio-economic circumstances?
+
+**Questions about me**
+- Visualisation, yes. But also: 
+  - Abstract algebra;
+  - Buffy the Vampire Slayer;
+  - 17th-century counterpoint;
+  - The Russion school of piano and three types of staccato;
+  - Life as a survivor of abuse.
+- You can ask me about **anything**. 
+- It's okay, really. Real stories **educate**.
+
+
 
 Testing area
 ========================================================
 
 
 ```r
-metamean::cov_dist
+metamean::cov_dist 
 ```
 
 ![plot of chunk Test plot](curiouscov-figure/Test plot-1.png)
+
+```r
+# +
+#   scale_colour_ochre(palette="dead_reef") +
+#     theme_bw() + 
+#     theme(aspect.ratio=1, legend.position="bottom")
+```
 
