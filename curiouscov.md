@@ -1,7 +1,7 @@
 The Curious Case of the Disappearing Coverage: a detective story in visualisation
 ========================================================
 author: Charles T. Gray, La Trobe University
-date: Monday 13 November 2017
+date: Tuesday 14 November 2017
 autosize: true
 incremental: true
 
@@ -12,17 +12,22 @@ The Curious Case of the Disappearing Coverage
 
 
 
-- Introduction 
-- An experiment in isolation
+- Opening ramblings. 
+- An experiment in **isolation**.
 - What are coverage probability simulations?
-- Visualising coverage probability simulations
-- The Curious Case of the Disappearing Coverage
+- Visualising coverage probability simulations.
+- The Curious Case of the Disappearing Coverage.
 - If we have time, `purrr` simulations.
+
+Tasks - remove this slide after talk is written  
+========================================================
+- Figure out how to centre text in the middle of the page.
+- Finish table of variables of interst - look up how to make markdown talbes.
 
 Hello, world.
 ========================================================
 
-- Open with a quirky story of local flavour. 
+- Open with a quirky story of **local** flavour. 
 
 
 Introduction: the ggplot generation
@@ -47,6 +52,8 @@ Thoughts from messing around
 
 - Not theoretical.
 - Reflections results of **undirected exploration**.
+- The **if you didn't cover it in undergrad** rule. 
+- My **question** for you is, *should we?*
 - Theory, *next*.
 
 Thoughts from messing around
@@ -60,29 +67,51 @@ Thoughts from messing around
 - Should we?
 - **Foremost, the measure of a visualisation is how well it answers the question you are asking.**
 
+Thoughts from messing around
+========================================================
+
 ## base`R` vs `ggplot`
 
 - Perhaps at best **three variables** in base`R`.
 - Flexible facets, shapes, colour, and size add more variables in `ggplot`.
 
-Telling the story of the data
+Data stories; the dance of data
 ========================================================
 ![](stand-in-vis/pics-ICORS-talk/ratio_1.png)
 
-Telling the story of the data
+Data stories; the dance of data
 ========================================================
 ![](stand-in-vis/pics-ICORS-talk/ratio_2.png)
 
-Telling the story of the data
+Data stories; the dance of data
 ========================================================
 ![](stand-in-vis/pics-ICORS-talk/ratio_3.png)
-
 
 Coverage probability simulations
 ========================================================
 
 ## What is a coverage probability simulation?
-> Aim: Perform an experiment to see if the estimator  **parameter** $\theta$.
+> Aim: Perform an experiment to see if$\widehat\theta$ is a good estimator for $\theta$.
+
+Coverage probability simulations
+========================================================
+
+### For each **trial**:
+- Generate a random sample of size **$n$** from a chosen **distribution** with population **parameter** $\theta$.
+- Calculate $\widehat\theta$ and $\mathrm{se}_{\widehat\theta}$.
+- Calculate confidence interval,
+$$
+\widehat\theta \pm \Phi^{-1}(0.975) \mathrm{se}_{\widehat\theta}.
+$$
+- Ask, 
+  - $\theta \in \widehat\theta \pm \Phi^{-1}(0.975) \mathrm{se}_{\widehat\theta}$ 
+  - or 
+  - $\theta \not\in \widehat\theta \pm \Phi^{-1}(0.975) \mathrm{se}_{\widehat\theta}$?
+
+Coverage probability simulations
+========================================================
+
+> The *coverage probability* is the proportion of **trials** in which the confidence interval contains the true value $\theta$. 
 
 Visualising coverage probability simulations
 ========================================================
@@ -90,11 +119,19 @@ Visualising coverage probability simulations
 Variables of interest:
 
 - **Coverage probability**
-- Distribution
+- Distribution 
 - Sample size
 - Estimator
 - Relative absolute bias
 - Interval width
+
+Variables of interest
+========================================================
+
+------
+---|---
+Distribution|`lnorm`
+
 
 Visualising coverage probability simulations
 ========================================================
@@ -110,6 +147,8 @@ Variables of interest:
 - Relative absolute bias
 - Interval width
 
+
+
 Visualising coverage probability simulations
 ========================================================
 ![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_norm_sim.png)
@@ -123,7 +162,11 @@ The Curious Case of the Disappearing Coverage
 ========================================================
 # So what is going on?
 # A dasterdly plot afoot?
-# A bug in my code?
+# A **bug** in my code?
+
+Use all the data
+========================================================
+
 
 Questions
 ========================================================
@@ -131,18 +174,22 @@ Questions
 **Questions for you**
 - Do we teach visualisation **adequately** to future analysts?
 - Do you consider the impact of housing affordability and the lack of enforcable tenants' rights on your **renting** students in low socio-economic circumstances?
+- Do put the **out** in outreach?
 
-**Questions about me**
-- Visualisation, yes. But also: 
-  - Abstract algebra;
-  - Buffy the Vampire Slayer;
-  - 17th-century counterpoint;
-  - The Russion school of piano and three types of staccato;
-  - Life as a survivor of abuse.
-- You can ask me about **anything**. 
-- It's okay, really. Real stories **educate**.
+***
 
+**Questions for me**
+- Visualisation and stats, yes. But also: 
+  - Abstract algebra and 17th-century counterpoint;
+  - *Buffy the Vampire Slayer* and *Disney*;
+  - Life as a **survivor** of a crappy childhood.
+- You can ask me about **anything**. It's okay, really. Real stories **educate**.
 
+No packages were harmed in the making of this talk
+========================================================
+- `tidyverse`
+- `.Rpres` file-type
+- Get slides: `devtools::install_github("softloud/curiouscov")`
 
 Testing area
 ========================================================
