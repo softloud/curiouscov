@@ -27,10 +27,15 @@ Open with a quirky story of **local** flavour.
 ---
 class: center, middle
 
-## Be better than me
-*Tip: do not rewrite all your simulations under some apparently small tweak just before giving your talk. A lesson I never seem to learn.* 
+# More like Curious Case of the Misbehaving function
 
-**All visualisations are stand-ins.**
+Spoiler alert: it was the `cross` `r icon::fa_bug()` function that did it. 
+***
+
+Couldn't get it or `map` to play nice with a nested list with a vector that either was `null` or `numeric`.
+***
+
+**All visualisations are stand-ins.** 
 
 ---
 class: inverse, center, middle
@@ -204,11 +209,11 @@ class: inverse, center, middle
 # The Curious Case of the Disappearing Coverage
 
 ---
-# Wave plots
+## The Curious Case of the Disappearing Coverage
 ![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_om_sim.png)
 
 ---
-# Wave plots
+## The Curious Case of the Disappearing Coverage
 ![Coverage probability](stand-in-vis/pics-ICORS-talk/ss_om_sim.png)
 
 ---
@@ -232,15 +237,15 @@ class: inverse, center, middle
 
 
 ---
-## Point estimates are so last century
+## Wave plots: point estimates are so last century
 ![](stand-in-vis/wave-plots/om_wave_norm.png)
 
 ---
-## Point estimates are so last century
+## Wave plots: point estimates are so last century
 ![](stand-in-vis/wave-plots/om_wave_lnorm.png)
 
 ---
-## Point estimates are so last century
+## Wave plots: point estimates are so last century
 ![](stand-in-vis/wave-plots/om_wave_gamma.png)
 
 
